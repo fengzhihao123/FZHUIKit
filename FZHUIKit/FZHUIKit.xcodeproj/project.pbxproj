@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D62BE34D1F39AC94001C117D /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = D62BE34C1F39AC94001C117D /* UIView+Frame.m */; };
+		D62BE3551F39B053001C117D /* FZHAddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D62BE3541F39B053001C117D /* FZHAddressPickerView.m */; };
+		D62BE3571F39C0BF001C117D /* address.plist in Resources */ = {isa = PBXBuildFile; fileRef = D62BE3561F39C0BF001C117D /* address.plist */; };
 		D66FCAF31F340D030068C4C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D66FCAF21F340D030068C4C9 /* main.m */; };
 		D66FCAF61F340D030068C4C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D66FCAF51F340D030068C4C9 /* AppDelegate.m */; };
 		D66FCAF91F340D030068C4C9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66FCAF81F340D030068C4C9 /* ViewController.m */; };
@@ -39,6 +41,9 @@
 /* Begin PBXFileReference section */
 		D62BE34B1F39AC94001C117D /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Frame.h"; path = "UIKit/Category/UIView+Frame.h"; sourceTree = "<group>"; };
 		D62BE34C1F39AC94001C117D /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Frame.m"; path = "UIKit/Category/UIView+Frame.m"; sourceTree = "<group>"; };
+		D62BE3531F39B053001C117D /* FZHAddressPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZHAddressPickerView.h; sourceTree = "<group>"; };
+		D62BE3541F39B053001C117D /* FZHAddressPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZHAddressPickerView.m; sourceTree = "<group>"; };
+		D62BE3561F39C0BF001C117D /* address.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = address.plist; sourceTree = "<group>"; };
 		D66FCAEE1F340D030068C4C9 /* FZHUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FZHUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66FCAF21F340D030068C4C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D66FCAF41F340D030068C4C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,6 +96,49 @@
 				D62BE34C1F39AC94001C117D /* UIView+Frame.m */,
 			);
 			name = Category;
+			sourceTree = "<group>";
+		};
+		D62BE34E1F39B00F001C117D /* UIAlertView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UIAlertView;
+			path = UIKit/UIAlertView;
+			sourceTree = "<group>";
+		};
+		D62BE34F1F39B017001C117D /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UIButton;
+			path = UIKit/UIButton;
+			sourceTree = "<group>";
+		};
+		D62BE3501F39B01E001C117D /* UIPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				D62BE3561F39C0BF001C117D /* address.plist */,
+				D62BE3531F39B053001C117D /* FZHAddressPickerView.h */,
+				D62BE3541F39B053001C117D /* FZHAddressPickerView.m */,
+			);
+			name = UIPickerView;
+			path = UIKit/UIPickerView;
+			sourceTree = "<group>";
+		};
+		D62BE3511F39B01E001C117D /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UIScrollView;
+			path = UIKit/UIScrollView;
+			sourceTree = "<group>";
+		};
+		D62BE3521F39B01E001C117D /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UITableView;
+			path = UIKit/UITableView;
 			sourceTree = "<group>";
 		};
 		D66FCAE51F340D030068C4C9 = {
@@ -159,8 +207,12 @@
 		D66FCB241F340D0A0068C4C9 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				D62BE3501F39B01E001C117D /* UIPickerView */,
+				D62BE3511F39B01E001C117D /* UIScrollView */,
+				D62BE3521F39B01E001C117D /* UITableView */,
+				D62BE34F1F39B017001C117D /* UIButton */,
+				D62BE34E1F39B00F001C117D /* UIAlertView */,
 				D62BE34A1F39AC60001C117D /* Category */,
-				D66FCB291F346D0B0068C4C9 /* UIButton */,
 				D66FCB251F340D140068C4C9 /* UIlabel */,
 			);
 			name = UIKit;
@@ -173,13 +225,6 @@
 				D66FCB271F340D590068C4C9 /* FZHAutoLayoutHeightLabel.m */,
 			);
 			name = UIlabel;
-			sourceTree = "<group>";
-		};
-		D66FCB291F346D0B0068C4C9 /* UIButton */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = UIButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D66FCB011F340D030068C4C9 /* LaunchScreen.storyboard in Resources */,
+				D62BE3571F39C0BF001C117D /* address.plist in Resources */,
 				D66FCAFE1F340D030068C4C9 /* Assets.xcassets in Resources */,
 				D66FCAFC1F340D030068C4C9 /* Main.storyboard in Resources */,
 			);
@@ -322,6 +368,7 @@
 				D66FCB281F340D590068C4C9 /* FZHAutoLayoutHeightLabel.m in Sources */,
 				D66FCAF61F340D030068C4C9 /* AppDelegate.m in Sources */,
 				D62BE34D1F39AC94001C117D /* UIView+Frame.m in Sources */,
+				D62BE3551F39B053001C117D /* FZHAddressPickerView.m in Sources */,
 				D66FCAF31F340D030068C4C9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

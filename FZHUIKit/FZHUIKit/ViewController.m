@@ -5,18 +5,28 @@
 //  Created by 冯志浩 on 2017/8/4.
 //  Copyright © 2017年 冯志浩. All rights reserved.
 //
-
+#define ScreenW [UIScreen mainScreen].bounds.size.width
+#define screenH [UIScreen mainScreen].bounds.size.height
 #import "ViewController.h"
 #import "FZHAutoLayoutHeightLabel.h"
+#import "FZHAddressPickerView.h"
 @interface ViewController ()
-
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setupAutoLayoutLabel];
+//    [self setupAutoLayoutLabel];
+    [self setupAddressPickView];
+}
+
+- (void)setupAddressPickView {
+    FZHAddressPickerView *pickView = [FZHAddressPickerView initPickViewWithFrame:CGRectMake(0, 100, ScreenW, 150) completeAction:^(NSString *text) {
+        NSLog(@"%@",text);
+    }];
+    pickView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:pickView];
 }
 
 - (void)setupAutoLayoutLabel {
