@@ -22,10 +22,9 @@
 }
 
 - (void)setupAddressPickView {
-    FZHAddressPickerView *pickView = [FZHAddressPickerView initPickViewWithFrame:CGRectMake(0, 100, ScreenW, 150) completeAction:^(NSString *text) {
+    FZHAddressPickerView *pickView = [FZHAddressPickerView initPickViewWithFrame:CGRectMake(0, 100, ScreenW, 150) separator:@"•" completeAction:^(NSString *text) {
         NSLog(@"%@",text);
     }];
-    pickView.backgroundColor = [UIColor redColor];
     [self.view addSubview:pickView];
 }
 

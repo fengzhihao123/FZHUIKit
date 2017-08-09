@@ -15,8 +15,11 @@ UIPickerViewDataSource
 @property (nonatomic, strong) UIPickerView *addressPickerView;
 @property (nonatomic, strong) UILabel *addressLabel;
 @property (nonatomic, strong) UIButton *confirmButton;
+@property (nonatomic, strong) UIButton *cancelButton;
+@property (nonatomic, strong) UIView *separatorView;
 @property (nonatomic, copy) FZHPickerViewCompletionBlock completeAction;
 
+@property (nonatomic, copy) NSString *separator;
 @property (nonatomic, copy) NSArray *provinceArray;
 @property (nonatomic, copy) NSArray *cityArray;
 @property (nonatomic, copy) NSArray *areaArray;
@@ -29,19 +32,22 @@ UIPickerViewDataSource
 
 @implementation FZHAddressPickerView
 
-+ (instancetype)initPickViewWithFrame:(CGRect)frame completeAction:(FZHPickerViewCompletionBlock)completeAction {
-    return [[self alloc]initPickViewWithFrame:frame completeAction:completeAction];
++ (instancetype)initPickViewWithFrame:(CGRect)frame separator:(NSString *)separator completeAction:(FZHPickerViewCompletionBlock)completeAction{
+    return [[self alloc]initPickViewWithFrame:frame completeAction:completeAction separator:separator];
 }
 
-- (instancetype)initPickViewWithFrame:(CGRect)frame completeAction:(FZHPickerViewCompletionBlock)completeAction {
+- (instancetype)initPickViewWithFrame:(CGRect)frame completeAction:(FZHPickerViewCompletionBlock)completeAction separator:(NSString *)separator {
     if (self = [super initWithFrame:frame]) {
         _completeAction = completeAction;
-        
         _provinceRow = 0;
+        _separator = separator;
         [self setupAddressData];
+        
         [self addSubview:self.addressPickerView];
         [self addSubview:self.addressLabel];
         [self addSubview:self.confirmButton];
+        [self addSubview:self.cancelButton];
+        [self addSubview:self.separatorView];
     }
     return self;
 }
@@ -62,14 +68,20 @@ UIPickerViewDataSource
 }
 
 #pragma mark - UIPickerViewDelegate
-- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+//- (nullable NSAttributedString *)pickerView:(UIPickerView *)pickerView attributedTitleForRow:(NSInteger)row forComponent:(NSInteger)component
+//上面的方法pickerView 可以改变字体颜色，不能改变大小
+- (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view {
+    UILabel *titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 80, 40)];
+    titleLabel.textColor = [UIColor redColor];
+    titleLabel.font = [UIFont systemFontOfSize:15];
     if (component == 0) {
-        return _provinceArray[row];
+        titleLabel.text = _provinceArray[row];
     } else if (component == 1) {
-        return _cityArray[row];
+        titleLabel.text = _cityArray[row];
     } else {
-        return _areaArray[row];
+        titleLabel.text = _areaArray[row];
     }
+    return titleLabel;
 }
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
@@ -97,7 +109,8 @@ UIPickerViewDataSource
     } else {
         _area = _areaArray[row];
     }
-    _addressLabel.text = [NSString stringWithFormat:@"%@%@%@", _province, _city, _area];
+    
+    _addressLabel.text = [NSString stringWithFormat:@"%@%@%@%@%@", _province, _separator, _city, _separator, _area];
 }
 
 #pragma mark - 初始化控件
@@ -112,14 +125,15 @@ UIPickerViewDataSource
 
 - (UILabel *)addressLabel {
     if (!_addressLabel) {
-        _addressLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.fzhWidth/2, 50)];
+        _addressLabel = [[UILabel alloc]initWithFrame:CGRectMake(60, 0, self.fzhWidth - 120, 50)];
+        _addressLabel.textAlignment = NSTextAlignmentCenter;
     }
     return _addressLabel;
 }
 
 - (UIButton *)confirmButton {
     if (!_confirmButton) {
-        _confirmButton = [[UIButton alloc]initWithFrame:CGRectMake(self.fzhWidth/2, 0, self.fzhWidth/2, 50)];
+        _confirmButton = [[UIButton alloc]initWithFrame:CGRectMake(self.fzhWidth - 50, 10, 50, 30)];
         [_confirmButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_confirmButton setTitle:@"确认" forState:UIControlStateNormal];
         [_confirmButton addTarget:self action:@selector(confirmButtonDidTouch) forControlEvents:UIControlEventTouchUpInside];
@@ -127,10 +141,33 @@ UIPickerViewDataSource
     return _confirmButton;
 }
 
+- (UIButton *)cancelButton {
+    if (!_cancelButton) {
+        _cancelButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 10, 50, 30)];
+        [_cancelButton setTitle:@"取消" forState:UIControlStateNormal];
+        [_cancelButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_cancelButton addTarget:self action:@selector(cancelButtonDidTouch) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _cancelButton;
+}
+
+- (UIView *)separatorView {
+    if (!_separatorView) {
+        _separatorView = [[UIView alloc]initWithFrame:CGRectMake(0, 50, self.fzhWidth, 1)];
+        _separatorView.backgroundColor = [UIColor lightGrayColor];
+    }
+    return _separatorView;
+}
+
+#pragma mark - 点击事件
 - (void)confirmButtonDidTouch {
     if (self.completeAction) {
-        self.completeAction([NSString stringWithFormat:@"%@-%@-%@", _province, _city, _area]);
+        self.completeAction([NSString stringWithFormat:@"%@%@%@%@%@", _province, _separator, _city, _separator, _area]);
     }
+}
+
+- (void)cancelButtonDidTouch {
+    
 }
 
 #pragma mark - 初始化数据

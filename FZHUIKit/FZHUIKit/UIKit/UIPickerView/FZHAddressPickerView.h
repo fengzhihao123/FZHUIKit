@@ -11,5 +11,5 @@
 typedef void (^FZHPickerViewCompletionBlock)(NSString *text);
 @interface FZHAddressPickerView : UIView
 
-+ (instancetype)initPickViewWithFrame:(CGRect)frame completeAction:(FZHPickerViewCompletionBlock)completeAction;
++ (instancetype)initPickViewWithFrame:(CGRect)frame separator:(NSString *)separator completeAction:(FZHPickerViewCompletionBlock)completeAction;
 @end
