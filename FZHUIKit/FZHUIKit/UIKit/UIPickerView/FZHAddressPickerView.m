@@ -53,11 +53,7 @@ UIPickerViewDataSource
         //初始化数据
         [self setupAddressData];
         //添加子控件
-        [self addSubview:self.addressPickerView];
-        [self addSubview:self.addressLabel];
-        [self addSubview:self.confirmButton];
-        [self addSubview:self.cancelButton];
-        [self addSubview:self.separatorView];
+        [self addSubViews];
     }
     return self;
 }
@@ -268,22 +264,30 @@ UIPickerViewDataSource
 }
 
 #pragma mark - 私有方法
+- (void)addSubViews { //添加子控件
+    [self addSubview:self.addressPickerView];
+    [self addSubview:self.addressLabel];
+    [self addSubview:self.confirmButton];
+    [self addSubview:self.cancelButton];
+    [self addSubview:self.separatorView];
+}
+
 - (void)setupAddressData { //初始化数据
     _province = @"北京";
     _city = @"北京";
     _area = @"通州";
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"address" ofType:@"plist"];
-    _totalArray = [[NSArray alloc]initWithContentsOfFile:plistPath];
+    _totalArray = [[NSArray alloc] initWithContentsOfFile:plistPath];
 }
 
 - (void)resetDataAndUI { //重置数据和UI界面
     self.provinceArray = nil;
     self.cityArray = nil;
     self.areaArray = nil;
-    
+
     [_addressPickerView removeFromSuperview];
     _addressPickerView = nil;
-    
+
     [_confirmButton removeFromSuperview];
     _confirmButton = nil;
     
