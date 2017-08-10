@@ -34,6 +34,7 @@ UIPickerViewDataSource
 @property (nonatomic, copy) NSString *city;
 @property (nonatomic, copy) NSString *area;
 @property (nonatomic, assign) CGRect currentFrame;
+@property (nonatomic, assign) CGFloat animation;
 @end
 
 @implementation FZHAddressPickerView
@@ -48,7 +49,10 @@ UIPickerViewDataSource
         _provinceRow = 0;
         _separator = separator;
         _currentSuperView = currentSuperView;
+        _animation = 0.5;
         _currentFrame = frame;
+        _currentFrame.origin.y = screenH;
+        self.frame = _currentFrame;
         self.backgroundColor = [UIColor colorWithWhite:0.5 alpha:0.5];
         //初始化数据
         [self setupAddressData];
@@ -125,12 +129,30 @@ UIPickerViewDataSource
 #pragma clang diagnostic ignored "-Wunused-value"
     [self initPickViewWithFrame:_currentFrame currentSuperView:_currentSuperView completeAction:_completeAction separator:_separator];
     [_currentSuperView addSubview:self];
+    [self showViewAnimation];
 }
 
 - (void)hideAddressPickerView {
-    [self removeFromSuperview];
-    //重置状态
-    [self resetDataAndUI];
+    [self hideAnimation];
+}
+
+#pragma mark - Animation
+- (void)showViewAnimation {
+    _currentFrame.origin.y = screenH - self.fzhHeight;
+    [UIView animateWithDuration:_animation animations:^{
+        self.frame = _currentFrame;
+    }];
+}
+
+- (void)hideAnimation {
+    _currentFrame.origin.y = screenH;
+    [UIView animateWithDuration:_animation animations:^{
+        self.frame = _currentFrame;
+    } completion:^(BOOL finished) {
+        [self removeFromSuperview];
+        //重置状态
+        [self resetDataAndUI];
+    }];
 }
 
 #pragma mark - 初始化控件
