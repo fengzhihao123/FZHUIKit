@@ -11,9 +11,13 @@
 #import "FZHAutoLayoutHeightLabel.h"
 #import "FZHAddressPickerView.h"
 @interface ViewController ()
+@property (nonatomic, strong) FZHAddressPickerView *pickerView;
 @end
 
 @implementation ViewController
+- (IBAction)click:(UIButton *)sender {
+    [_pickerView showAddressPickerView];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,10 +26,9 @@
 }
 
 - (void)setupAddressPickView {
-    FZHAddressPickerView *pickView = [FZHAddressPickerView initPickViewWithFrame:CGRectMake(0, 100, ScreenW, 150) separator:@"•" completeAction:^(NSString *text) {
+    _pickerView = [FZHAddressPickerView initPickViewWithFrame:CGRectMake(0, screenH - 300, ScreenW, 300) currentSuperView:self.view separator:@"-" completeAction:^(NSString *text) {
         NSLog(@"%@",text);
     }];
-    [self.view addSubview:pickView];
 }
 
 - (void)setupAutoLayoutLabel {

@@ -6,19 +6,24 @@
 //  Copyright © 2017年 冯志浩. All rights reserved.
 //  地址选择器
 
+#define ScreenW [UIScreen mainScreen].bounds.size.width
+#define screenH [UIScreen mainScreen].bounds.size.height
+
 #import "FZHAddressPickerView.h"
 #import "UIView+Frame.h"
 @interface FZHAddressPickerView() <
 UIPickerViewDelegate,
 UIPickerViewDataSource
 >
+//控件
 @property (nonatomic, strong) UIPickerView *addressPickerView;
 @property (nonatomic, strong) UILabel *addressLabel;
 @property (nonatomic, strong) UIButton *confirmButton;
 @property (nonatomic, strong) UIButton *cancelButton;
 @property (nonatomic, strong) UIView *separatorView;
+@property (nonatomic, strong) UIView *currentSuperView;
 @property (nonatomic, copy) FZHPickerViewCompletionBlock completeAction;
-
+//属性
 @property (nonatomic, copy) NSString *separator;
 @property (nonatomic, copy) NSArray *provinceArray;
 @property (nonatomic, copy) NSArray *cityArray;
@@ -28,21 +33,26 @@ UIPickerViewDataSource
 @property (nonatomic, copy) NSString *province;
 @property (nonatomic, copy) NSString *city;
 @property (nonatomic, copy) NSString *area;
+@property (nonatomic, assign) CGRect currentFrame;
 @end
 
 @implementation FZHAddressPickerView
-
-+ (instancetype)initPickViewWithFrame:(CGRect)frame separator:(NSString *)separator completeAction:(FZHPickerViewCompletionBlock)completeAction{
-    return [[self alloc]initPickViewWithFrame:frame completeAction:completeAction separator:separator];
+//类初始化方法
++ (instancetype)initPickViewWithFrame:(CGRect)frame currentSuperView:(UIView *)currentSuperView separator:(NSString *)separator completeAction:(FZHPickerViewCompletionBlock)completeAction{
+    return [[self alloc]initPickViewWithFrame:frame currentSuperView:currentSuperView completeAction:completeAction separator:separator];
 }
-
-- (instancetype)initPickViewWithFrame:(CGRect)frame completeAction:(FZHPickerViewCompletionBlock)completeAction separator:(NSString *)separator {
+//实例初始化方法
+- (instancetype)initPickViewWithFrame:(CGRect)frame currentSuperView:(UIView *)currentSuperView completeAction:(FZHPickerViewCompletionBlock)completeAction separator:(NSString *)separator {
     if (self = [super initWithFrame:frame]) {
         _completeAction = completeAction;
         _provinceRow = 0;
         _separator = separator;
+        _currentSuperView = currentSuperView;
+        _currentFrame = frame;
+        self.backgroundColor = [UIColor colorWithWhite:0.5 alpha:0.5];
+        //初始化数据
         [self setupAddressData];
-        
+        //添加子控件
         [self addSubview:self.addressPickerView];
         [self addSubview:self.addressLabel];
         [self addSubview:self.confirmButton];
@@ -109,8 +119,22 @@ UIPickerViewDataSource
     } else {
         _area = _areaArray[row];
     }
-    
     _addressLabel.text = [NSString stringWithFormat:@"%@%@%@%@%@", _province, _separator, _city, _separator, _area];
+}
+
+#pragma mark - 显示/隐藏地址选择器
+- (void)showAddressPickerView {
+//消除’expression result unused‘的警告
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunused-value"
+    [self initPickViewWithFrame:_currentFrame currentSuperView:_currentSuperView completeAction:_completeAction separator:_separator];
+    [_currentSuperView addSubview:self];
+}
+
+- (void)hideAddressPickerView {
+    [self removeFromSuperview];
+    //重置状态
+    [self resetDataAndUI];
 }
 
 #pragma mark - 初始化控件
@@ -127,6 +151,7 @@ UIPickerViewDataSource
     if (!_addressLabel) {
         _addressLabel = [[UILabel alloc]initWithFrame:CGRectMake(60, 0, self.fzhWidth - 120, 50)];
         _addressLabel.textAlignment = NSTextAlignmentCenter;
+        _addressLabel.text = [NSString stringWithFormat:@"%@%@%@%@%@", _province, _separator, _city, _separator, _area];
     }
     return _addressLabel;
 }
@@ -160,14 +185,15 @@ UIPickerViewDataSource
 }
 
 #pragma mark - 点击事件
-- (void)confirmButtonDidTouch {
+- (void)confirmButtonDidTouch { //确认按钮点击事件
     if (self.completeAction) {
         self.completeAction([NSString stringWithFormat:@"%@%@%@%@%@", _province, _separator, _city, _separator, _area]);
     }
+    [self hideAddressPickerView];
 }
 
-- (void)cancelButtonDidTouch {
-    
+- (void)cancelButtonDidTouch { //取消按钮点击事件
+    [self hideAddressPickerView];
 }
 
 #pragma mark - 初始化数据
@@ -205,13 +231,6 @@ UIPickerViewDataSource
     }
 }
 
-- (void)setupAddressData {
-    _province = @"北京";
-    _city = @"北京";
-    _area = @"通州";
-    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"address" ofType:@"plist"];
-    _totalArray = [[NSArray alloc]initWithContentsOfFile:plistPath];
-}
 // 省
 - (NSArray *)provinceArray {
     if (!_provinceArray) {
@@ -246,5 +265,35 @@ UIPickerViewDataSource
         _areaArray = [areaArray copy];
     }
     return _areaArray;
+}
+
+#pragma mark - 私有方法
+- (void)setupAddressData { //初始化数据
+    _province = @"北京";
+    _city = @"北京";
+    _area = @"通州";
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"address" ofType:@"plist"];
+    _totalArray = [[NSArray alloc]initWithContentsOfFile:plistPath];
+}
+
+- (void)resetDataAndUI { //重置数据和UI界面
+    self.provinceArray = nil;
+    self.cityArray = nil;
+    self.areaArray = nil;
+    
+    [_addressPickerView removeFromSuperview];
+    _addressPickerView = nil;
+    
+    [_confirmButton removeFromSuperview];
+    _confirmButton = nil;
+    
+    [_cancelButton removeFromSuperview];
+    _cancelButton = nil;
+    
+    [_addressLabel removeFromSuperview];
+    _addressLabel = nil;
+    
+    [_separatorView removeFromSuperview];
+    _separatorView = nil;
 }
 @end
