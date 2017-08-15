@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C2A6738EE6850994AED21A7 /* libPods-FZHUIKitUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E262975C840CF9349F8D6F3 /* libPods-FZHUIKitUITests.a */; };
+		4B98E3262954F1FC04BC3DD2 /* libPods-FZHUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B1A022B7C739C7D666C83F /* libPods-FZHUIKit.a */; };
+		8BC1BA6036A43D61A516969D /* libPods-FZHUIKitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E3979B89E9FE1356D22DEEF /* libPods-FZHUIKitTests.a */; };
 		D62BE34D1F39AC94001C117D /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = D62BE34C1F39AC94001C117D /* UIView+Frame.m */; };
 		D66FCAF31F340D030068C4C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D66FCAF21F340D030068C4C9 /* main.m */; };
 		D66FCAF61F340D030068C4C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D66FCAF51F340D030068C4C9 /* AppDelegate.m */; };
@@ -21,6 +24,11 @@
 		D6AF902B1F3D41DA00C90F7A /* FZHAddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF90291F3D41DA00C90F7A /* FZHAddressPickerView.m */; };
 		D6AF90301F3D51B700C90F7A /* FZHSearchBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF902F1F3D51B700C90F7A /* FZHSearchBarView.m */; };
 		D6E573121F4296F8006266DD /* FZHPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E573111F4296F8006266DD /* FZHPlaceholderTextView.m */; };
+		D6E573151F42C68F006266DD /* SubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E573141F42C68E006266DD /* SubViewController.m */; };
+		D6E5731A1F42CECB006266DD /* TZDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E573181F42CECB006266DD /* TZDatePickerView.m */; };
+		D6E5731B1F42CECB006266DD /* TZDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6E573191F42CECB006266DD /* TZDatePickerView.xib */; };
+		D6E573231F42E166006266DD /* FZHDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E573221F42E166006266DD /* FZHDatePickerView.m */; };
+		D6E573261F42EDE9006266DD /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E573251F42EDE9006266DD /* UIColor+Hex.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +49,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F9CE2A07F0CAF9F43A49B41 /* Pods-FZHUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FZHUIKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FZHUIKit/Pods-FZHUIKit.debug.xcconfig"; sourceTree = "<group>"; };
+		1E3979B89E9FE1356D22DEEF /* libPods-FZHUIKitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FZHUIKitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E262975C840CF9349F8D6F3 /* libPods-FZHUIKitUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FZHUIKitUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40A149C17F475BA754F9CACE /* Pods-FZHUIKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FZHUIKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FZHUIKitTests/Pods-FZHUIKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		41B1A022B7C739C7D666C83F /* libPods-FZHUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FZHUIKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41E77CF6D7DA3CB904264884 /* Pods-FZHUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FZHUIKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-FZHUIKit/Pods-FZHUIKit.release.xcconfig"; sourceTree = "<group>"; };
+		7DA976F54BD6DE40BFFA609E /* Pods-FZHUIKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FZHUIKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FZHUIKitTests/Pods-FZHUIKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		B749B7C6C3EC7700025A2E8D /* Pods-FZHUIKitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FZHUIKitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FZHUIKitUITests/Pods-FZHUIKitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D62BE34B1F39AC94001C117D /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Frame.h"; path = "UIKit/Category/UIView+Frame.h"; sourceTree = "<group>"; };
 		D62BE34C1F39AC94001C117D /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Frame.m"; path = "UIKit/Category/UIView+Frame.m"; sourceTree = "<group>"; };
 		D66FCAEE1F340D030068C4C9 /* FZHUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FZHUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +84,16 @@
 		D6AF902F1F3D51B700C90F7A /* FZHSearchBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZHSearchBarView.m; sourceTree = "<group>"; };
 		D6E573101F4296F8006266DD /* FZHPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZHPlaceholderTextView.h; sourceTree = "<group>"; };
 		D6E573111F4296F8006266DD /* FZHPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZHPlaceholderTextView.m; sourceTree = "<group>"; };
+		D6E573131F42C68E006266DD /* SubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubViewController.h; sourceTree = "<group>"; };
+		D6E573141F42C68E006266DD /* SubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubViewController.m; sourceTree = "<group>"; };
+		D6E573171F42CECB006266DD /* TZDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZDatePickerView.h; sourceTree = "<group>"; };
+		D6E573181F42CECB006266DD /* TZDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZDatePickerView.m; sourceTree = "<group>"; };
+		D6E573191F42CECB006266DD /* TZDatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TZDatePickerView.xib; sourceTree = "<group>"; };
+		D6E573211F42E166006266DD /* FZHDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZHDatePickerView.h; sourceTree = "<group>"; };
+		D6E573221F42E166006266DD /* FZHDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZHDatePickerView.m; sourceTree = "<group>"; };
+		D6E573241F42EDE9006266DD /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Hex.h"; path = "UIKit/Category/UIColor+Hex.h"; sourceTree = "<group>"; };
+		D6E573251F42EDE9006266DD /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Hex.m"; path = "UIKit/Category/UIColor+Hex.m"; sourceTree = "<group>"; };
+		F1981EF73063E9176F146F2A /* Pods-FZHUIKitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FZHUIKitUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FZHUIKitUITests/Pods-FZHUIKitUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B98E3262954F1FC04BC3DD2 /* libPods-FZHUIKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BC1BA6036A43D61A516969D /* libPods-FZHUIKitTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,15 +117,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C2A6738EE6850994AED21A7 /* libPods-FZHUIKitUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		719698325AA44115C869C713 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F9CE2A07F0CAF9F43A49B41 /* Pods-FZHUIKit.debug.xcconfig */,
+				41E77CF6D7DA3CB904264884 /* Pods-FZHUIKit.release.xcconfig */,
+				40A149C17F475BA754F9CACE /* Pods-FZHUIKitTests.debug.xcconfig */,
+				7DA976F54BD6DE40BFFA609E /* Pods-FZHUIKitTests.release.xcconfig */,
+				B749B7C6C3EC7700025A2E8D /* Pods-FZHUIKitUITests.debug.xcconfig */,
+				F1981EF73063E9176F146F2A /* Pods-FZHUIKitUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D62BE34A1F39AC60001C117D /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				D6E573241F42EDE9006266DD /* UIColor+Hex.h */,
+				D6E573251F42EDE9006266DD /* UIColor+Hex.m */,
 				D62BE34B1F39AC94001C117D /* UIView+Frame.h */,
 				D62BE34C1F39AC94001C117D /* UIView+Frame.m */,
 			);
@@ -123,6 +167,8 @@
 		D62BE3501F39B01E001C117D /* UIPickerView */ = {
 			isa = PBXGroup;
 			children = (
+				D6E5731D1F42D738006266DD /* FZHDatePicker */,
+				D6E573161F42CECB006266DD /* TZDatePicker */,
 				D6AF90261F3D41DA00C90F7A /* AddressPicker */,
 			);
 			name = UIPickerView;
@@ -152,6 +198,8 @@
 				D66FCB0A1F340D030068C4C9 /* FZHUIKitTests */,
 				D66FCB151F340D030068C4C9 /* FZHUIKitUITests */,
 				D66FCAEF1F340D030068C4C9 /* Products */,
+				719698325AA44115C869C713 /* Pods */,
+				E309F29F0B6F7098A4D378DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,6 +221,8 @@
 				D66FCAF51F340D030068C4C9 /* AppDelegate.m */,
 				D66FCAF71F340D030068C4C9 /* ViewController.h */,
 				D66FCAF81F340D030068C4C9 /* ViewController.m */,
+				D6E573131F42C68E006266DD /* SubViewController.h */,
+				D6E573141F42C68E006266DD /* SubViewController.m */,
 				D66FCAFA1F340D030068C4C9 /* Main.storyboard */,
 				D66FCAFD1F340D030068C4C9 /* Assets.xcassets */,
 				D66FCAFF1F340D030068C4C9 /* LaunchScreen.storyboard */,
@@ -271,6 +321,35 @@
 			path = UIKit/UITextView;
 			sourceTree = "<group>";
 		};
+		D6E573161F42CECB006266DD /* TZDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				D6E573171F42CECB006266DD /* TZDatePickerView.h */,
+				D6E573181F42CECB006266DD /* TZDatePickerView.m */,
+				D6E573191F42CECB006266DD /* TZDatePickerView.xib */,
+			);
+			path = TZDatePicker;
+			sourceTree = "<group>";
+		};
+		D6E5731D1F42D738006266DD /* FZHDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				D6E573211F42E166006266DD /* FZHDatePickerView.h */,
+				D6E573221F42E166006266DD /* FZHDatePickerView.m */,
+			);
+			path = FZHDatePicker;
+			sourceTree = "<group>";
+		};
+		E309F29F0B6F7098A4D378DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41B1A022B7C739C7D666C83F /* libPods-FZHUIKit.a */,
+				1E3979B89E9FE1356D22DEEF /* libPods-FZHUIKitTests.a */,
+				3E262975C840CF9349F8D6F3 /* libPods-FZHUIKitUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -278,9 +357,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D66FCB1B1F340D030068C4C9 /* Build configuration list for PBXNativeTarget "FZHUIKit" */;
 			buildPhases = (
+				D6E138A16EFD004BD1A0CC62 /* [CP] Check Pods Manifest.lock */,
 				D66FCAEA1F340D030068C4C9 /* Sources */,
 				D66FCAEB1F340D030068C4C9 /* Frameworks */,
 				D66FCAEC1F340D030068C4C9 /* Resources */,
+				3A6E9B357A6B020B4BFCA923 /* [CP] Embed Pods Frameworks */,
+				0A319EDD78B5F9AC620E1063 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -295,9 +377,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D66FCB1E1F340D030068C4C9 /* Build configuration list for PBXNativeTarget "FZHUIKitTests" */;
 			buildPhases = (
+				E9D0AB63D629E239699B090E /* [CP] Check Pods Manifest.lock */,
 				D66FCB031F340D030068C4C9 /* Sources */,
 				D66FCB041F340D030068C4C9 /* Frameworks */,
 				D66FCB051F340D030068C4C9 /* Resources */,
+				95FB8CD4BB96416C1B20EC8E /* [CP] Embed Pods Frameworks */,
+				2F653ADFAFD9CCFB4F63AB37 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -313,9 +398,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D66FCB211F340D030068C4C9 /* Build configuration list for PBXNativeTarget "FZHUIKitUITests" */;
 			buildPhases = (
+				F496C37F940EC6F5A603229B /* [CP] Check Pods Manifest.lock */,
 				D66FCB0E1F340D030068C4C9 /* Sources */,
 				D66FCB0F1F340D030068C4C9 /* Frameworks */,
 				D66FCB101F340D030068C4C9 /* Resources */,
+				593FE1773959E7A6D5D0B5CF /* [CP] Embed Pods Frameworks */,
+				E9937557569375AA4428A794 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -380,6 +468,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6E5731B1F42CECB006266DD /* TZDatePickerView.xib in Resources */,
 				D66FCB011F340D030068C4C9 /* LaunchScreen.storyboard in Resources */,
 				D6AF902A1F3D41DA00C90F7A /* address.plist in Resources */,
 				D66FCAFE1F340D030068C4C9 /* Assets.xcassets in Resources */,
@@ -403,14 +492,156 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A319EDD78B5F9AC620E1063 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FZHUIKit/Pods-FZHUIKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F653ADFAFD9CCFB4F63AB37 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FZHUIKitTests/Pods-FZHUIKitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A6E9B357A6B020B4BFCA923 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FZHUIKit/Pods-FZHUIKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		593FE1773959E7A6D5D0B5CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FZHUIKitUITests/Pods-FZHUIKitUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95FB8CD4BB96416C1B20EC8E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FZHUIKitTests/Pods-FZHUIKitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6E138A16EFD004BD1A0CC62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E9937557569375AA4428A794 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FZHUIKitUITests/Pods-FZHUIKitUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9D0AB63D629E239699B090E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F496C37F940EC6F5A603229B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D66FCAEA1F340D030068C4C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6E5731A1F42CECB006266DD /* TZDatePickerView.m in Sources */,
+				D6E573261F42EDE9006266DD /* UIColor+Hex.m in Sources */,
 				D66FCAF91F340D030068C4C9 /* ViewController.m in Sources */,
 				D66FCB281F340D590068C4C9 /* FZHAutoLayoutHeightLabel.m in Sources */,
+				D6E573231F42E166006266DD /* FZHDatePickerView.m in Sources */,
 				D6AF90301F3D51B700C90F7A /* FZHSearchBarView.m in Sources */,
+				D6E573151F42C68F006266DD /* SubViewController.m in Sources */,
 				D66FCAF61F340D030068C4C9 /* AppDelegate.m in Sources */,
 				D62BE34D1F39AC94001C117D /* UIView+Frame.m in Sources */,
 				D6AF902B1F3D41DA00C90F7A /* FZHAddressPickerView.m in Sources */,
@@ -562,6 +793,7 @@
 		};
 		D66FCB1C1F340D030068C4C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F9CE2A07F0CAF9F43A49B41 /* Pods-FZHUIKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 93J5P3W89X;
@@ -574,6 +806,7 @@
 		};
 		D66FCB1D1F340D030068C4C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41E77CF6D7DA3CB904264884 /* Pods-FZHUIKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 93J5P3W89X;
@@ -586,6 +819,7 @@
 		};
 		D66FCB1F1F340D030068C4C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40A149C17F475BA754F9CACE /* Pods-FZHUIKitTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 93J5P3W89X;
@@ -599,6 +833,7 @@
 		};
 		D66FCB201F340D030068C4C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DA976F54BD6DE40BFFA609E /* Pods-FZHUIKitTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 93J5P3W89X;
@@ -612,6 +847,7 @@
 		};
 		D66FCB221F340D030068C4C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B749B7C6C3EC7700025A2E8D /* Pods-FZHUIKitUITests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 93J5P3W89X;
 				INFOPLIST_FILE = FZHUIKitUITests/Info.plist;
@@ -624,6 +860,7 @@
 		};
 		D66FCB231F340D030068C4C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1981EF73063E9176F146F2A /* Pods-FZHUIKitUITests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 93J5P3W89X;
 				INFOPLIST_FILE = FZHUIKitUITests/Info.plist;
