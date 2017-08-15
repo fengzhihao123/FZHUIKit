@@ -25,8 +25,6 @@
 		D6AF90301F3D51B700C90F7A /* FZHSearchBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF902F1F3D51B700C90F7A /* FZHSearchBarView.m */; };
 		D6E573121F4296F8006266DD /* FZHPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E573111F4296F8006266DD /* FZHPlaceholderTextView.m */; };
 		D6E573151F42C68F006266DD /* SubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E573141F42C68E006266DD /* SubViewController.m */; };
-		D6E5731A1F42CECB006266DD /* TZDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E573181F42CECB006266DD /* TZDatePickerView.m */; };
-		D6E5731B1F42CECB006266DD /* TZDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6E573191F42CECB006266DD /* TZDatePickerView.xib */; };
 		D6E573231F42E166006266DD /* FZHDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E573221F42E166006266DD /* FZHDatePickerView.m */; };
 		D6E573261F42EDE9006266DD /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E573251F42EDE9006266DD /* UIColor+Hex.m */; };
 /* End PBXBuildFile section */
@@ -86,9 +84,6 @@
 		D6E573111F4296F8006266DD /* FZHPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZHPlaceholderTextView.m; sourceTree = "<group>"; };
 		D6E573131F42C68E006266DD /* SubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubViewController.h; sourceTree = "<group>"; };
 		D6E573141F42C68E006266DD /* SubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubViewController.m; sourceTree = "<group>"; };
-		D6E573171F42CECB006266DD /* TZDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZDatePickerView.h; sourceTree = "<group>"; };
-		D6E573181F42CECB006266DD /* TZDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZDatePickerView.m; sourceTree = "<group>"; };
-		D6E573191F42CECB006266DD /* TZDatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TZDatePickerView.xib; sourceTree = "<group>"; };
 		D6E573211F42E166006266DD /* FZHDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZHDatePickerView.h; sourceTree = "<group>"; };
 		D6E573221F42E166006266DD /* FZHDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZHDatePickerView.m; sourceTree = "<group>"; };
 		D6E573241F42EDE9006266DD /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Hex.h"; path = "UIKit/Category/UIColor+Hex.h"; sourceTree = "<group>"; };
@@ -168,7 +163,6 @@
 			isa = PBXGroup;
 			children = (
 				D6E5731D1F42D738006266DD /* FZHDatePicker */,
-				D6E573161F42CECB006266DD /* TZDatePicker */,
 				D6AF90261F3D41DA00C90F7A /* AddressPicker */,
 			);
 			name = UIPickerView;
@@ -321,16 +315,6 @@
 			path = UIKit/UITextView;
 			sourceTree = "<group>";
 		};
-		D6E573161F42CECB006266DD /* TZDatePicker */ = {
-			isa = PBXGroup;
-			children = (
-				D6E573171F42CECB006266DD /* TZDatePickerView.h */,
-				D6E573181F42CECB006266DD /* TZDatePickerView.m */,
-				D6E573191F42CECB006266DD /* TZDatePickerView.xib */,
-			);
-			path = TZDatePicker;
-			sourceTree = "<group>";
-		};
 		D6E5731D1F42D738006266DD /* FZHDatePicker */ = {
 			isa = PBXGroup;
 			children = (
@@ -468,7 +452,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6E5731B1F42CECB006266DD /* TZDatePickerView.xib in Resources */,
 				D66FCB011F340D030068C4C9 /* LaunchScreen.storyboard in Resources */,
 				D6AF902A1F3D41DA00C90F7A /* address.plist in Resources */,
 				D66FCAFE1F340D030068C4C9 /* Assets.xcassets in Resources */,
@@ -635,7 +618,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6E5731A1F42CECB006266DD /* TZDatePickerView.m in Sources */,
 				D6E573261F42EDE9006266DD /* UIColor+Hex.m in Sources */,
 				D66FCAF91F340D030068C4C9 /* ViewController.m in Sources */,
 				D66FCB281F340D590068C4C9 /* FZHAutoLayoutHeightLabel.m in Sources */,
