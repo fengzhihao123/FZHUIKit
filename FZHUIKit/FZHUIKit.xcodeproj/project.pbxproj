@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D62BE34D1F39AC94001C117D /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = D62BE34C1F39AC94001C117D /* UIView+Frame.m */; };
-		D62BE3551F39B053001C117D /* FZHAddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D62BE3541F39B053001C117D /* FZHAddressPickerView.m */; };
-		D62BE3571F39C0BF001C117D /* address.plist in Resources */ = {isa = PBXBuildFile; fileRef = D62BE3561F39C0BF001C117D /* address.plist */; };
 		D66FCAF31F340D030068C4C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D66FCAF21F340D030068C4C9 /* main.m */; };
 		D66FCAF61F340D030068C4C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D66FCAF51F340D030068C4C9 /* AppDelegate.m */; };
 		D66FCAF91F340D030068C4C9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66FCAF81F340D030068C4C9 /* ViewController.m */; };
@@ -19,6 +17,10 @@
 		D66FCB0C1F340D030068C4C9 /* FZHUIKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D66FCB0B1F340D030068C4C9 /* FZHUIKitTests.m */; };
 		D66FCB171F340D030068C4C9 /* FZHUIKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D66FCB161F340D030068C4C9 /* FZHUIKitUITests.m */; };
 		D66FCB281F340D590068C4C9 /* FZHAutoLayoutHeightLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D66FCB271F340D590068C4C9 /* FZHAutoLayoutHeightLabel.m */; };
+		D6AF902A1F3D41DA00C90F7A /* address.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6AF90271F3D41DA00C90F7A /* address.plist */; };
+		D6AF902B1F3D41DA00C90F7A /* FZHAddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF90291F3D41DA00C90F7A /* FZHAddressPickerView.m */; };
+		D6AF90301F3D51B700C90F7A /* FZHSearchBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF902F1F3D51B700C90F7A /* FZHSearchBarView.m */; };
+		D6E573121F4296F8006266DD /* FZHPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E573111F4296F8006266DD /* FZHPlaceholderTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +43,6 @@
 /* Begin PBXFileReference section */
 		D62BE34B1F39AC94001C117D /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Frame.h"; path = "UIKit/Category/UIView+Frame.h"; sourceTree = "<group>"; };
 		D62BE34C1F39AC94001C117D /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Frame.m"; path = "UIKit/Category/UIView+Frame.m"; sourceTree = "<group>"; };
-		D62BE3531F39B053001C117D /* FZHAddressPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZHAddressPickerView.h; sourceTree = "<group>"; };
-		D62BE3541F39B053001C117D /* FZHAddressPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZHAddressPickerView.m; sourceTree = "<group>"; };
-		D62BE3561F39C0BF001C117D /* address.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = address.plist; sourceTree = "<group>"; };
 		D66FCAEE1F340D030068C4C9 /* FZHUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FZHUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66FCAF21F340D030068C4C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D66FCAF41F340D030068C4C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,6 +61,13 @@
 		D66FCB181F340D030068C4C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D66FCB261F340D590068C4C9 /* FZHAutoLayoutHeightLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZHAutoLayoutHeightLabel.h; path = UIKit/UILabel/FZHAutoLayoutHeightLabel.h; sourceTree = "<group>"; };
 		D66FCB271F340D590068C4C9 /* FZHAutoLayoutHeightLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZHAutoLayoutHeightLabel.m; path = UIKit/UILabel/FZHAutoLayoutHeightLabel.m; sourceTree = "<group>"; };
+		D6AF90271F3D41DA00C90F7A /* address.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = address.plist; sourceTree = "<group>"; };
+		D6AF90281F3D41DA00C90F7A /* FZHAddressPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZHAddressPickerView.h; sourceTree = "<group>"; };
+		D6AF90291F3D41DA00C90F7A /* FZHAddressPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZHAddressPickerView.m; sourceTree = "<group>"; };
+		D6AF902E1F3D51B700C90F7A /* FZHSearchBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZHSearchBarView.h; sourceTree = "<group>"; };
+		D6AF902F1F3D51B700C90F7A /* FZHSearchBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZHSearchBarView.m; sourceTree = "<group>"; };
+		D6E573101F4296F8006266DD /* FZHPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZHPlaceholderTextView.h; sourceTree = "<group>"; };
+		D6E573111F4296F8006266DD /* FZHPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZHPlaceholderTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,9 +123,7 @@
 		D62BE3501F39B01E001C117D /* UIPickerView */ = {
 			isa = PBXGroup;
 			children = (
-				D62BE3561F39C0BF001C117D /* address.plist */,
-				D62BE3531F39B053001C117D /* FZHAddressPickerView.h */,
-				D62BE3541F39B053001C117D /* FZHAddressPickerView.m */,
+				D6AF90261F3D41DA00C90F7A /* AddressPicker */,
 			);
 			name = UIPickerView;
 			path = UIKit/UIPickerView;
@@ -207,6 +211,8 @@
 		D66FCB241F340D0A0068C4C9 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				D6E5730F1F42962A006266DD /* UITextView */,
+				D6AF902C1F3D519100C90F7A /* UISearchBar */,
 				D62BE3501F39B01E001C117D /* UIPickerView */,
 				D62BE3511F39B01E001C117D /* UIScrollView */,
 				D62BE3521F39B01E001C117D /* UITableView */,
@@ -225,6 +231,44 @@
 				D66FCB271F340D590068C4C9 /* FZHAutoLayoutHeightLabel.m */,
 			);
 			name = UIlabel;
+			sourceTree = "<group>";
+		};
+		D6AF90261F3D41DA00C90F7A /* AddressPicker */ = {
+			isa = PBXGroup;
+			children = (
+				D6AF90271F3D41DA00C90F7A /* address.plist */,
+				D6AF90281F3D41DA00C90F7A /* FZHAddressPickerView.h */,
+				D6AF90291F3D41DA00C90F7A /* FZHAddressPickerView.m */,
+			);
+			path = AddressPicker;
+			sourceTree = "<group>";
+		};
+		D6AF902C1F3D519100C90F7A /* UISearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				D6AF902D1F3D519100C90F7A /* WechatSearch */,
+			);
+			name = UISearchBar;
+			path = UIKit/UISearchBar;
+			sourceTree = "<group>";
+		};
+		D6AF902D1F3D519100C90F7A /* WechatSearch */ = {
+			isa = PBXGroup;
+			children = (
+				D6AF902E1F3D51B700C90F7A /* FZHSearchBarView.h */,
+				D6AF902F1F3D51B700C90F7A /* FZHSearchBarView.m */,
+			);
+			path = WechatSearch;
+			sourceTree = "<group>";
+		};
+		D6E5730F1F42962A006266DD /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				D6E573101F4296F8006266DD /* FZHPlaceholderTextView.h */,
+				D6E573111F4296F8006266DD /* FZHPlaceholderTextView.m */,
+			);
+			name = UITextView;
+			path = UIKit/UITextView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,7 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D66FCB011F340D030068C4C9 /* LaunchScreen.storyboard in Resources */,
-				D62BE3571F39C0BF001C117D /* address.plist in Resources */,
+				D6AF902A1F3D41DA00C90F7A /* address.plist in Resources */,
 				D66FCAFE1F340D030068C4C9 /* Assets.xcassets in Resources */,
 				D66FCAFC1F340D030068C4C9 /* Main.storyboard in Resources */,
 			);
@@ -366,9 +410,11 @@
 			files = (
 				D66FCAF91F340D030068C4C9 /* ViewController.m in Sources */,
 				D66FCB281F340D590068C4C9 /* FZHAutoLayoutHeightLabel.m in Sources */,
+				D6AF90301F3D51B700C90F7A /* FZHSearchBarView.m in Sources */,
 				D66FCAF61F340D030068C4C9 /* AppDelegate.m in Sources */,
 				D62BE34D1F39AC94001C117D /* UIView+Frame.m in Sources */,
-				D62BE3551F39B053001C117D /* FZHAddressPickerView.m in Sources */,
+				D6AF902B1F3D41DA00C90F7A /* FZHAddressPickerView.m in Sources */,
+				D6E573121F4296F8006266DD /* FZHPlaceholderTextView.m in Sources */,
 				D66FCAF31F340D030068C4C9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

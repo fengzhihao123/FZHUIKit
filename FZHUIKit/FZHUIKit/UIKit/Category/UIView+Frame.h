@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface UIView (Frame)
-
 - (CGFloat)fzhX;
 - (CGFloat)fzhY;
 - (CGFloat)fzhWidth;

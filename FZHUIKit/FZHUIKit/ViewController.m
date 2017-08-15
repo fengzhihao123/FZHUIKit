@@ -10,20 +10,39 @@
 #import "ViewController.h"
 #import "FZHAutoLayoutHeightLabel.h"
 #import "FZHAddressPickerView.h"
+#import "FZHSearchBarView.h"
+#import "FZHPlaceholderTextView.h"
 @interface ViewController ()
+@property (nonatomic, strong) FZHSearchBarView *fzhSearchView;
 @property (nonatomic, strong) FZHAddressPickerView *pickerView;
 @end
 
 @implementation ViewController
 - (IBAction)click:(UIButton *)sender {
     [_pickerView showAddressPickerView];
+    
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"Root";
 //    [self setupAutoLayoutLabel];
-    [self setupAddressPickView];
+//    [self setupAddressPickView];
+//    _fzhSearchView = [[FZHSearchBarView alloc]initFZHSearchBarViewWithFrame:CGRectMake(0, 64, ScreenW, 40) currentNavigationBar: self.navigationController.navigationBar];
+//    [self.view addSubview:_fzhSearchView];
+    [self setupTextView];
 }
+
+- (void)setupTextView {
+    FZHPlaceholderTextView *textView = [[FZHPlaceholderTextView alloc]initWithFrame:CGRectMake(100, 200, 200, 300)];
+    textView.font = [UIFont systemFontOfSize:25];
+    textView.backgroundColor = [UIColor blueColor];
+    textView.placeholder = @"placeholder hello world";
+    [self.view addSubview:textView];
+}
+
+
+
 
 - (void)setupAddressPickView {
     _pickerView = [FZHAddressPickerView initPickViewWithFrame:CGRectMake(0, screenH - 300, ScreenW, 300) currentSuperView:self.view separator:@"-" completeAction:^(NSString *text) {
