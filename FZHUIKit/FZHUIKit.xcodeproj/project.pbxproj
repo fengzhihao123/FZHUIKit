@@ -20,6 +20,7 @@
 		D66FCB0C1F340D030068C4C9 /* FZHUIKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D66FCB0B1F340D030068C4C9 /* FZHUIKitTests.m */; };
 		D66FCB171F340D030068C4C9 /* FZHUIKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D66FCB161F340D030068C4C9 /* FZHUIKitUITests.m */; };
 		D66FCB281F340D590068C4C9 /* FZHAutoLayoutHeightLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D66FCB271F340D590068C4C9 /* FZHAutoLayoutHeightLabel.m */; };
+		D69B9C4C1F44101F00348417 /* FZHAliPaySuccessView.m in Sources */ = {isa = PBXBuildFile; fileRef = D69B9C4B1F44101F00348417 /* FZHAliPaySuccessView.m */; };
 		D6AF902A1F3D41DA00C90F7A /* address.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6AF90271F3D41DA00C90F7A /* address.plist */; };
 		D6AF902B1F3D41DA00C90F7A /* FZHAddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF90291F3D41DA00C90F7A /* FZHAddressPickerView.m */; };
 		D6AF90301F3D51B700C90F7A /* FZHSearchBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF902F1F3D51B700C90F7A /* FZHSearchBarView.m */; };
@@ -75,6 +76,8 @@
 		D66FCB181F340D030068C4C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D66FCB261F340D590068C4C9 /* FZHAutoLayoutHeightLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZHAutoLayoutHeightLabel.h; path = UIKit/UILabel/FZHAutoLayoutHeightLabel.h; sourceTree = "<group>"; };
 		D66FCB271F340D590068C4C9 /* FZHAutoLayoutHeightLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZHAutoLayoutHeightLabel.m; path = UIKit/UILabel/FZHAutoLayoutHeightLabel.m; sourceTree = "<group>"; };
+		D69B9C4A1F44101F00348417 /* FZHAliPaySuccessView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZHAliPaySuccessView.h; sourceTree = "<group>"; };
+		D69B9C4B1F44101F00348417 /* FZHAliPaySuccessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZHAliPaySuccessView.m; sourceTree = "<group>"; };
 		D6AF90271F3D41DA00C90F7A /* address.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = address.plist; sourceTree = "<group>"; };
 		D6AF90281F3D41DA00C90F7A /* FZHAddressPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZHAddressPickerView.h; sourceTree = "<group>"; };
 		D6AF90291F3D41DA00C90F7A /* FZHAddressPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZHAddressPickerView.m; sourceTree = "<group>"; };
@@ -210,6 +213,7 @@
 		D66FCAF01F340D030068C4C9 /* FZHUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				D69B9C441F43E1FA00348417 /* Animation */,
 				D66FCB241F340D0A0068C4C9 /* UIKit */,
 				D66FCAF41F340D030068C4C9 /* AppDelegate.h */,
 				D66FCAF51F340D030068C4C9 /* AppDelegate.m */,
@@ -275,6 +279,23 @@
 				D66FCB271F340D590068C4C9 /* FZHAutoLayoutHeightLabel.m */,
 			);
 			name = UIlabel;
+			sourceTree = "<group>";
+		};
+		D69B9C441F43E1FA00348417 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				D69B9C491F44100400348417 /* AliPaySccessView */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		D69B9C491F44100400348417 /* AliPaySccessView */ = {
+			isa = PBXGroup;
+			children = (
+				D69B9C4A1F44101F00348417 /* FZHAliPaySuccessView.h */,
+				D69B9C4B1F44101F00348417 /* FZHAliPaySuccessView.m */,
+			);
+			path = AliPaySccessView;
 			sourceTree = "<group>";
 		};
 		D6AF90261F3D41DA00C90F7A /* AddressPicker */ = {
@@ -623,6 +644,7 @@
 				D66FCB281F340D590068C4C9 /* FZHAutoLayoutHeightLabel.m in Sources */,
 				D6E573231F42E166006266DD /* FZHDatePickerView.m in Sources */,
 				D6AF90301F3D51B700C90F7A /* FZHSearchBarView.m in Sources */,
+				D69B9C4C1F44101F00348417 /* FZHAliPaySuccessView.m in Sources */,
 				D6E573151F42C68F006266DD /* SubViewController.m in Sources */,
 				D66FCAF61F340D030068C4C9 /* AppDelegate.m in Sources */,
 				D62BE34D1F39AC94001C117D /* UIView+Frame.m in Sources */,
