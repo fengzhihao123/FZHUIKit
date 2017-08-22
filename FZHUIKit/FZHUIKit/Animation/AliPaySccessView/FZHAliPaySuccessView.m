@@ -5,6 +5,7 @@
 //  Created by 冯志浩 on 2017/8/16.
 //  Copyright © 2017年 冯志浩. All rights reserved.
 //  支付宝支付成功动画效果
+// Reference: http://www.jianshu.com/p/4dd2f9c5bd46
 
 #import "FZHAliPaySuccessView.h"
 @interface FZHAliPaySuccessView() <CAAnimationDelegate>

@@ -11,6 +11,8 @@
 		4B98E3262954F1FC04BC3DD2 /* libPods-FZHUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B1A022B7C739C7D666C83F /* libPods-FZHUIKit.a */; };
 		8BC1BA6036A43D61A516969D /* libPods-FZHUIKitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E3979B89E9FE1356D22DEEF /* libPods-FZHUIKitTests.a */; };
 		D62BE34D1F39AC94001C117D /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = D62BE34C1F39AC94001C117D /* UIView+Frame.m */; };
+		D6559E1F1F4587E200578567 /* FZHAutoHeightTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6559E1E1F4587E200578567 /* FZHAutoHeightTextView.m */; };
+		D6652C241F46E2AA002D7778 /* FZHPopListView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6652C231F46E2AA002D7778 /* FZHPopListView.m */; };
 		D66FCAF31F340D030068C4C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D66FCAF21F340D030068C4C9 /* main.m */; };
 		D66FCAF61F340D030068C4C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D66FCAF51F340D030068C4C9 /* AppDelegate.m */; };
 		D66FCAF91F340D030068C4C9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66FCAF81F340D030068C4C9 /* ViewController.m */; };
@@ -20,6 +22,7 @@
 		D66FCB0C1F340D030068C4C9 /* FZHUIKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D66FCB0B1F340D030068C4C9 /* FZHUIKitTests.m */; };
 		D66FCB171F340D030068C4C9 /* FZHUIKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D66FCB161F340D030068C4C9 /* FZHUIKitUITests.m */; };
 		D66FCB281F340D590068C4C9 /* FZHAutoLayoutHeightLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D66FCB271F340D590068C4C9 /* FZHAutoLayoutHeightLabel.m */; };
+		D67EAB2E1F4AFE93001A794E /* FZHButtonListView.m in Sources */ = {isa = PBXBuildFile; fileRef = D67EAB2D1F4AFE93001A794E /* FZHButtonListView.m */; };
 		D69B9C4C1F44101F00348417 /* FZHAliPaySuccessView.m in Sources */ = {isa = PBXBuildFile; fileRef = D69B9C4B1F44101F00348417 /* FZHAliPaySuccessView.m */; };
 		D6AF902A1F3D41DA00C90F7A /* address.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6AF90271F3D41DA00C90F7A /* address.plist */; };
 		D6AF902B1F3D41DA00C90F7A /* FZHAddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF90291F3D41DA00C90F7A /* FZHAddressPickerView.m */; };
@@ -58,6 +61,10 @@
 		B749B7C6C3EC7700025A2E8D /* Pods-FZHUIKitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FZHUIKitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FZHUIKitUITests/Pods-FZHUIKitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D62BE34B1F39AC94001C117D /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Frame.h"; path = "UIKit/Category/UIView+Frame.h"; sourceTree = "<group>"; };
 		D62BE34C1F39AC94001C117D /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Frame.m"; path = "UIKit/Category/UIView+Frame.m"; sourceTree = "<group>"; };
+		D6559E1D1F4587E200578567 /* FZHAutoHeightTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZHAutoHeightTextView.h; sourceTree = "<group>"; };
+		D6559E1E1F4587E200578567 /* FZHAutoHeightTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZHAutoHeightTextView.m; sourceTree = "<group>"; };
+		D6652C221F46E2AA002D7778 /* FZHPopListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZHPopListView.h; sourceTree = "<group>"; };
+		D6652C231F46E2AA002D7778 /* FZHPopListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZHPopListView.m; sourceTree = "<group>"; };
 		D66FCAEE1F340D030068C4C9 /* FZHUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FZHUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66FCAF21F340D030068C4C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D66FCAF41F340D030068C4C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -76,6 +83,8 @@
 		D66FCB181F340D030068C4C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D66FCB261F340D590068C4C9 /* FZHAutoLayoutHeightLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZHAutoLayoutHeightLabel.h; path = UIKit/UILabel/FZHAutoLayoutHeightLabel.h; sourceTree = "<group>"; };
 		D66FCB271F340D590068C4C9 /* FZHAutoLayoutHeightLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZHAutoLayoutHeightLabel.m; path = UIKit/UILabel/FZHAutoLayoutHeightLabel.m; sourceTree = "<group>"; };
+		D67EAB2C1F4AFE93001A794E /* FZHButtonListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZHButtonListView.h; sourceTree = "<group>"; };
+		D67EAB2D1F4AFE93001A794E /* FZHButtonListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZHButtonListView.m; sourceTree = "<group>"; };
 		D69B9C4A1F44101F00348417 /* FZHAliPaySuccessView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZHAliPaySuccessView.h; sourceTree = "<group>"; };
 		D69B9C4B1F44101F00348417 /* FZHAliPaySuccessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZHAliPaySuccessView.m; sourceTree = "<group>"; };
 		D6AF90271F3D41DA00C90F7A /* address.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = address.plist; sourceTree = "<group>"; };
@@ -157,6 +166,8 @@
 		D62BE34F1F39B017001C117D /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
+				D67EAB2C1F4AFE93001A794E /* FZHButtonListView.h */,
+				D67EAB2D1F4AFE93001A794E /* FZHButtonListView.m */,
 			);
 			name = UIButton;
 			path = UIKit/UIButton;
@@ -186,6 +197,33 @@
 			);
 			name = UITableView;
 			path = UIKit/UITableView;
+			sourceTree = "<group>";
+		};
+		D6559E1C1F4587CD00578567 /* FZHAutoHeightTextView */ = {
+			isa = PBXGroup;
+			children = (
+				D6559E1D1F4587E200578567 /* FZHAutoHeightTextView.h */,
+				D6559E1E1F4587E200578567 /* FZHAutoHeightTextView.m */,
+			);
+			path = FZHAutoHeightTextView;
+			sourceTree = "<group>";
+		};
+		D6652C201F46E28E002D7778 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				D6652C211F46E28E002D7778 /* UIPopView */,
+			);
+			name = UIView;
+			path = UIKit/UIView;
+			sourceTree = "<group>";
+		};
+		D6652C211F46E28E002D7778 /* UIPopView */ = {
+			isa = PBXGroup;
+			children = (
+				D6652C221F46E2AA002D7778 /* FZHPopListView.h */,
+				D6652C231F46E2AA002D7778 /* FZHPopListView.m */,
+			);
+			path = UIPopView;
 			sourceTree = "<group>";
 		};
 		D66FCAE51F340D030068C4C9 = {
@@ -259,6 +297,7 @@
 		D66FCB241F340D0A0068C4C9 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				D6652C201F46E28E002D7778 /* UIView */,
 				D6E5730F1F42962A006266DD /* UITextView */,
 				D6AF902C1F3D519100C90F7A /* UISearchBar */,
 				D62BE3501F39B01E001C117D /* UIPickerView */,
@@ -329,6 +368,7 @@
 		D6E5730F1F42962A006266DD /* UITextView */ = {
 			isa = PBXGroup;
 			children = (
+				D6559E1C1F4587CD00578567 /* FZHAutoHeightTextView */,
 				D6E573101F4296F8006266DD /* FZHPlaceholderTextView.h */,
 				D6E573111F4296F8006266DD /* FZHPlaceholderTextView.m */,
 			);
@@ -641,12 +681,15 @@
 			files = (
 				D6E573261F42EDE9006266DD /* UIColor+Hex.m in Sources */,
 				D66FCAF91F340D030068C4C9 /* ViewController.m in Sources */,
+				D67EAB2E1F4AFE93001A794E /* FZHButtonListView.m in Sources */,
 				D66FCB281F340D590068C4C9 /* FZHAutoLayoutHeightLabel.m in Sources */,
 				D6E573231F42E166006266DD /* FZHDatePickerView.m in Sources */,
 				D6AF90301F3D51B700C90F7A /* FZHSearchBarView.m in Sources */,
 				D69B9C4C1F44101F00348417 /* FZHAliPaySuccessView.m in Sources */,
 				D6E573151F42C68F006266DD /* SubViewController.m in Sources */,
 				D66FCAF61F340D030068C4C9 /* AppDelegate.m in Sources */,
+				D6559E1F1F4587E200578567 /* FZHAutoHeightTextView.m in Sources */,
+				D6652C241F46E2AA002D7778 /* FZHPopListView.m in Sources */,
 				D62BE34D1F39AC94001C117D /* UIView+Frame.m in Sources */,
 				D6AF902B1F3D41DA00C90F7A /* FZHAddressPickerView.m in Sources */,
 				D6E573121F4296F8006266DD /* FZHPlaceholderTextView.m in Sources */,
